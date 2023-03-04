@@ -11,10 +11,11 @@ img {
   display: block;
 }
 .main-container {
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+
 
 }
 .product-conatiner {
@@ -22,6 +23,8 @@ img {
   background-color: hsl(0, 0%, 100%);
   border-radius: 15px;
   color: hsl(228, 12%, 48%);
+
+
 
 }
 .product-img {
@@ -70,4 +73,17 @@ img {
 }
 .button-text {
   color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+
+.product-conatiner {
+  display: block;
+  grid-template-columns: 1fr 2fr;
+}
+.product-img {
+  height: 300px;
+  object-fit: cover;
+}
+
 }
